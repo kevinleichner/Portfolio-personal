@@ -1,0 +1,750 @@
+* {
+	margin:0;
+	padding: 0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: "Open Sans", sans-serif;
+}
+
+/*---------------- HEADER ----------------*/
+
+.contenidoHeader {
+	text-align: center;
+	color: #fff;
+	padding: 300px 0px;
+}
+.contenidoHeader h1 {
+	font-size: 90px;
+	max-width: 2000px;
+	width: 100%;
+	padding: 0px 40px;
+}
+.contenidoHeader p {
+	font-size: 30px;
+	font-weight: 100;
+}
+
+header {
+	background: url(../img/header.jpg);
+	background-size: cover;
+}
+
+nav {
+	padding: 20px;
+	text-align: right;
+}
+
+nav a {
+	text-decoration: none;
+	color: #fff;
+	padding: 20px;
+	font-size: 20px;
+}
+
+nav a:hover {
+	border-bottom: 5px solid #fff;
+}
+
+/* -------------- ACERCA DE ------------- */
+
+.contenedorAcercade {
+	text-align: center;
+	padding: 50px 30px;
+}
+
+.contenedorAcercade h3 {
+	font-size: 70px;
+}
+
+.contenedorAcercade article p {
+	padding: 0px 100px;
+	font-size: 25px;
+	color: #424242;
+}
+
+.contenedorAcercade .foto {
+	padding: 40px;
+}
+
+.contenedorAcercade .foto img{
+	width: 200px;
+	height: 200px;
+	border-radius: 50%;
+	border: 10px solid rgba(0, 0, 0, .1);
+}
+.fotosConocimientos img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 10px;
+}
+.conocimiento {
+	display: inline-block;
+	margin: 0px 30px 60px 30px;
+}
+.conocimiento h5 {
+	font-size: 30px;
+}
+.conocimientos h4 {
+	font-size: 40px;
+	padding: 50px;
+}
+.conocimientos .contenedor {
+	display: flex;
+	justify-content: space-around;
+}
+
+/* ------------ PROYECTOS ---------------- */
+
+.proyectos .contenedor	{
+	width: 100%;
+}
+.puckrun {
+	background: #f15bb5;
+}
+.computer {
+	background:  #0096c7;
+	border-top: 5px solid #fff;
+	border-bottom: 5px solid #fff;
+}
+.juego .logo {
+	display: inline-block;
+	vertical-align: middle;
+}
+.juego .logo img {
+	width: 100px;
+	height: 100px;
+	margin-bottom: 30px;
+	margin-right: 10px;
+	border-radius: 50%;
+}
+.juego {
+	color: #ffff;
+	padding: 100px 100px;
+	height: 100%;
+}
+.juego h2 {
+	margin-bottom: 30px;
+	font-weight: bolder;
+	font-size: 60px;
+	display: inline-block;
+}
+.juego p {
+	font-weight: 100;
+	font-size: 25px;
+	font-style: italic;
+}
+.descripcion {
+	display: -webkit-box;
+	-webkit-line-clamp: 3;
+	-webkit-box-orient: vertical;
+	overflow: hidden;
+}
+.juego .leer-mas {
+	margin-bottom: 30px;
+	color: blue;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	text-align: right;
+	text-decoration: underline;
+}
+.leer-mas:hover {
+	cursor: pointer;
+}
+.leer-menos {
+	-webkit-line-clamp: 0;
+}
+.juego .descarga {
+	width: 40px;
+	vertical-align: middle;
+	margin-right: 20px;
+}
+.btn-juego {
+	display: inline-block;
+	color: #fff;
+    background: orange;
+    border-radius: 4px;
+    border: 2px solid #ffff;
+	padding: 30px;
+	margin: 30px 20px 0px 0px;
+	text-decoration: none;
+	font-weight: bolder;
+	font-size: 30px;
+	width: 45%;
+}
+.juego .descargas {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	margin-right: -10px;
+}
+.btn-juego:hover {
+	background: darkorange;
+	text-decoration: underline;
+}
+
+/* ------------ CAROUSEL ---------------- */
+
+.fotos, .menu {
+	justify-content: center;
+}
+
+.contenedorCarousel {
+	padding: 0px 13px;
+	border-radius: 15px;
+	background: #e2e2e2;
+	max-width: 1500px;
+    width: 100%;
+    margin: auto;
+}
+.fotos {
+	position: relative;
+    max-width: 1500px;
+    width: 100%;
+    height: 600px;
+}
+
+.fotos li {
+    position: absolute;
+    left: 0px;
+    top: 12px;
+    opacity: 0;
+    width: inherit;
+    height: inherit;
+    transition: opacity .5s;
+}
+
+.fotos li img{
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+
+ul, li {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+.menu{
+	position: relative;
+    text-align: center;
+	bottom: 30px;
+    padding: 0px;
+}
+
+.menu li{
+    display: inline-block;
+    text-align: center;
+    margin-right: 10px;
+    padding: 0px;
+}
+
+.menu li button{
+    display: inline-block;
+    color: white;
+    padding: 5px;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #fff;
+}
+
+.menu li button:hover {
+    background-color: #007ed3;
+    cursor: pointer;
+}
+
+.actual {
+    background: #007ed3;
+ }
+
+/* ------------- CONTACTO ----------------- */
+
+.contacto .contenedor {
+	padding: 80px 0px;
+	text-align: center;
+	background: #001d3d;
+	color: #fff;
+}
+.contacto .correo {
+	margin-top: -15px;
+}
+.contacto .contactos {
+	display: flex;
+	justify-content: center;
+}
+.contacto .contenedor .correo, .facebook, .instagram {
+	display: inline-block;
+}
+.contacto h3 {
+	font-size: 70px;
+	margin-bottom: 100px;
+}
+.contacto p {
+	font-size: 20px;
+	font-weight: bold;
+}
+.contactos img{
+	max-width: 100px;
+	width: 100%;
+	margin: 0px 70px;
+	padding: 20px;
+}
+.correo img {
+	margin-bottom: -20px;
+}
+.facebook img:hover {
+	background: #1877f2;
+	border-radius: 15px;
+	padding: 10px;
+}
+.instagram img:hover {
+	background: #e1306c;
+	border-radius: 15px;
+	padding: 10px;
+}
+
+/* ------------- RESPONSIVE DESIGN ----------------- */
+
+@media screen and (max-width: 1140px) {
+.fotos {
+    height: 500px;
+} 	
+}
+
+@media screen and (max-width: 1040px) {
+.fotos {
+    height: 450px;
+} 	
+}
+@media screen and (max-width: 940px) {
+.fotos {
+    height: 400px;
+} 	
+}
+
+@media screen and (max-width: 900px) {
+.contenedorAcercade article p {
+font-size: 22px;
+}
+.fotos {
+    height: 350px;
+}
+.juego a {
+	font-size: 20px;
+	padding: 20px;
+} 	
+}
+
+@media screen and (max-width: 830px) {
+.juego h2 {
+	font-size: 50px;
+}
+.juego p {
+	font-size: 20px;
+}
+.juego .leer-mas {
+	font-size: 15px;
+}
+.juego {
+	padding: 30px 50px;
+}
+.fotos {
+    height: 300px;
+} 
+}
+
+@media screen and (max-width: 800px) {
+
+.contenidoHeader h1 {
+	font-size: 70px;
+}
+.contenidoHeader p {
+	font-size: 25px;
+}
+
+.contenedorAcercade h3, .contacto h3 {
+	font-size: 50px;
+}
+.contenedorAcercade h4 {
+	font-size: 35px;
+}
+.contenedorAcercade h5 {
+	font-size: 20px;
+}
+.contenedorAcercade article p {
+	font-size: 20px;
+	padding: 0px 60px;
+}
+
+
+.contacto p {
+	font-size: 16px;
+}
+.contactos img{
+	max-width: 80px;
+	width: 100%;
+	margin: 0px 70px;
+	padding: 10px;
+}
+.facebook img:hover, .instagram img:hover {
+	padding: 5px;
+}
+}
+
+
+@media screen and (max-width: 700px) {
+
+nav {
+	text-align: center;
+}
+
+.contenedorAcercade article p {
+	padding: 0px 30px;
+}
+
+.juego h2 {
+	font-size: 30px;
+}
+.juego p {
+	font-size: 15px;
+}
+.juego .leer-mas {
+	font-size: 13px;
+}
+.juego .logo img {
+	width: 60px;
+	height: 60px;
+	margin-bottom: 10px;
+}
+.juego a {
+	margin: 10px 10px 0px 0px;
+}
+.juego .descargas {
+	margin-top: 20px;
+}
+
+.contacto .contenedor {
+	padding: 40px 0px;
+}
+.contacto h3 {
+	margin-bottom: 50px;
+}
+.contacto p {
+	font-size: 14px;
+}
+.contactos img{
+	max-width: 60px;
+	width: 100%;
+	margin: 0px 50px;
+	padding: 10px;
+}
+}
+
+@media screen and (max-width: 600px) {
+
+.contenidoHeader h1 {
+	font-size: 50px;
+}
+.contenidoHeader p {
+	font-size: 20px;
+}
+.contenedorAcercade .foto img{
+	width: 180px;
+	height: 180px;
+}
+.contenedorAcercade h3, .contacto h3 {
+	font-size: 40px;
+}
+.contenedorAcercade h4 {
+	font-size: 32px;
+}
+.contenedorAcercade h5 {
+	font-size: 20px;
+}
+.fotos {
+    height: 250px;
+}  
+.juego {
+	padding: 70px 30px;
+}
+.juego a {
+	font-size: 17px;
+}
+.juego .descarga {
+	width: 30px;
+}
+}
+
+@media screen and (max-width: 500px) {
+.contenedorAcercade article p {
+	font-size: 17px;
+	padding: 0px 20px;
+}
+.fotosConocimientos img {
+	width: 80px;
+	height: 80px;
+}
+.contenedorAcercade h5 {
+	font-size: 17px;
+}
+.conocimiento {
+	margin: 0px 15px 30px 15px;
+}
+.fotos {
+    height: 230px;
+} 
+.juego a {
+	font-size: 15px;
+	padding: 20px 10px;
+}
+.juego .descarga {
+	width: 25px;
+	margin-right: 5px;
+}
+.contacto .contenedor {
+	padding: 30px 0px;
+}
+.contacto p {
+	font-size: 13px;
+}
+.contactos img{
+	max-width: 50px;
+	width: 100%;
+	margin: 0px 40px;
+	padding: 10px;
+}
+.correo img {
+	margin-bottom: -10px;
+}
+}
+
+@media screen and (max-width: 460px) {
+.contenidoHeader h1 {
+	font-size: 43px;
+	padding: 0px 10px;
+}
+.contenidoHeader p {
+	font-size: 16px;
+}
+.contenedorAcercade h4 {
+	padding: 40px 0px;
+}
+.fotos {
+    height: 200px;
+}
+}
+
+@media screen and (max-width: 440px) {
+nav a {
+	padding: 15px;
+}
+.juego {
+	padding: 70px 15px;
+}
+.contacto p {
+	font-size: 12px;
+}
+.contactos img{
+	max-width: 50px;
+	width: 100%;
+	margin: 0px 20px;
+	padding: 10px;
+}
+.correo img {
+	margin-bottom: -10px;
+}
+}
+
+@media screen and (max-width: 405px) {
+nav a {
+	font-size: 18px;
+	padding: 10px;
+}
+.contenidoHeader h1 {
+	font-size: 40px;
+}
+.contenidoHeader p {
+	font-size: 15px;
+}
+.contenedorAcercade {
+	padding: 40px 10px;
+}
+.contenedorAcercade .foto img{
+	width: 160px;
+	height: 160px;
+}
+.contenedorAcercade h3, .contacto h3 {
+	font-size: 35px;
+}
+.contenedorAcercade h4 {
+	font-size: 28px;
+}
+.contenedorAcercade article p {
+	font-size: 17px;
+	padding: 0px 10px;
+}
+.fotosConocimientos img {
+	width: 45px;
+	height: 45px;
+	margin-bottom: 7px;
+}
+.contenedorAcercade h5 {
+	font-size: 16px;
+}
+.conocimiento {
+	margin: 0px 7px 25px 7px;
+}
+.fotos {
+    height: 180px;
+}
+}
+
+@media screen and (max-width: 385px) {
+
+.juego .logo , .juego h2 , .juego p{
+	text-align: center;
+	display: block;
+}
+.juego .descripcion {
+	display: -webkit-box;
+}
+.juego .logo img {
+	width: 80px;
+	height: 80px;
+	margin-bottom: 10px;
+}
+.juego h2 {
+	font-size: 30px;
+}
+.fotos {
+    height: 150px;
+}
+}
+
+@media screen and (max-width: 350px) {
+nav {
+	padding: 20px 10px;
+}
+nav a {
+	font-size: 15px;
+	padding: 10px;
+}
+.contenidoHeader {
+	padding: 250px 0px;
+}
+.contenidoHeader h1 {
+	font-size: 36px;
+}
+.contenidoHeader p {
+	font-size: 14px;
+}
+.contenedorAcercade article p {
+	font-size: 15px;
+	padding: 0px 5px;
+}
+.fotosConocimientos img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.contenedorAcercade h5 {
+	font-size: 13px;
+}
+.conocimiento {
+	margin: 0px 7px 25px 7px;
+}
+.juego a {
+	font-size: 15px;
+	padding: 10px;
+}
+.juego .descarga {
+	width: 20px;
+	margin-bottom: 5px;
+}
+.contacto p {
+	font-size: 10px;
+}
+.contactos img{
+	max-width: 40px;
+	width: 100%;
+	margin: 0px 20px;
+	padding: 5px;
+}
+.correo img {
+	margin-bottom: -5px;
+}
+}
+
+@media screen and (max-width: 300px) {
+nav {
+	padding: 20px 0px;
+}
+nav a {
+	font-size: 13px;
+}
+.contenidoHeader h1 {
+	font-size: 33px;
+}
+.contenidoHeader p {
+	font-size: 14px;
+}
+.contenedorAcercade .foto {
+	padding: 20px;
+}
+.contenedorAcercade .foto img{
+	width: 140px;
+	height: 140px;
+}
+.contenedorAcercade h3, .contacto h3 {
+	font-size: 30px;
+}
+.contenedorAcercade h4 {
+	font-size: 25px;
+}
+.fotosConocimientos img {
+	width: 40px;
+	height: 40px;
+	margin-bottom: 5px;
+}
+.contenedorAcercade h5 {
+	font-size: 13px;
+}
+.conocimiento {
+	margin: 0px 7px 25px 7px;
+}
+.fotos {
+    height: 130px;
+}
+.contacto p {
+	font-size: 8px;
+}
+.contactos img{
+	max-width: 30px;
+	width: 100%;
+	margin: 0px 20px;
+	padding: 5px;
+}
+.correo img {
+	margin-bottom: -5px;
+}
+}
+
+@media screen and (max-width: 270px) {
+.contenidoHeader h1 {
+	font-size: 30px;
+}
+.contenidoHeader p {
+	font-size: 12px;
+}
+.contenedorAcercade article p {
+	font-size: 14px;
+	padding: 0px;
+}
+}
+
